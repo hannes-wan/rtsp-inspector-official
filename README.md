@@ -22,6 +22,8 @@ Sequence, timestamp, RTCP, SDP, and media continuity in one view.
 
 ## Download packages
 
+- [rtsp-inspector-1.0.2-windows-x64-setup.exe](https://github.com/hannes-wan/rtsp-inspector-official/releases/download/v1.0.2/rtsp-inspector-1.0.2-windows-x64-setup.exe)
+
 - [rtsp-inspector-1.0.2-linux-x64.AppImage](https://github.com/hannes-wan/rtsp-inspector-official/releases/download/v1.0.2/rtsp-inspector-1.0.2-linux-x64.AppImage)
 - [rtsp-inspector-1.0.2-linux-x64.deb](https://github.com/hannes-wan/rtsp-inspector-official/releases/download/v1.0.2/rtsp-inspector-1.0.2-linux-x64.deb)
 - [rtsp-inspector-1.0.2-linux-x64.rpm](https://github.com/hannes-wan/rtsp-inspector-official/releases/download/v1.0.2/rtsp-inspector-1.0.2-linux-x64.rpm)
