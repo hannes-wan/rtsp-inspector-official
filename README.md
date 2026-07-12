@@ -1,24 +1,48 @@
 # RTSP Inspector
 
-**IP camera stream failing? Generate a protocol-level failure report before blaming the NVR, player, network, or camera.**
+[![Community Edition: Free](https://img.shields.io/badge/Community_Edition-Free-16a34a?style=for-the-badge)](https://hannes-software.com/rtsp-inspector/download/)
+[![Windows](https://img.shields.io/badge/Windows-Desktop-2563eb?style=flat-square&logo=windows)](https://hannes-software.com/rtsp-inspector/download/) [![Linux](https://img.shields.io/badge/Linux-Desktop-f59e0b?style=flat-square&logo=linux)](https://hannes-software.com/rtsp-inspector/download/) [![Local first](https://img.shields.io/badge/Workflow-Local--first-7c3aed?style=flat-square)](https://hannes-software.com/rtsp-inspector/)
+
+> RTSP software for proving why an IP camera stream fails.
 
 Turn camera black screens, VLC-vs-VMS mismatches, ONVIF handoff failures, blocked UDP media, RTP loss, and H.264/H.265 codec problems into a report a customer, vendor, or support team can act on.
 
-[Website](https://hannes-software.com/rtsp-inspector/) · [Download](https://hannes-software.com/rtsp-inspector/download/) · [Help](https://hannes-software.com/rtsp-inspector/help/) · [Latest release](https://github.com/hannes-wan/rtsp-inspector-official/releases/tag/v1.0.3)
+**RTSP Inspector Community Edition is free to download and use.** Single-stream live RTSP-over-TCP diagnosis and JSON report preview.
 
-## The problem it solves
+[Download Community Edition](https://hannes-software.com/rtsp-inspector/download/) · [Product guide](https://hannes-software.com/rtsp-inspector/) · [Help](https://hannes-software.com/rtsp-inspector/help/) · [Report a bug](https://github.com/hannes-wan/rtsp-inspector-official/issues/new?template=bug_report.yml)
 
-**Camera black screens should not turn into a blame loop.**
+## Download RTSP Inspector 1.0.3
+
+| Platform | Package | Use it when |
+| --- | --- | --- |
+| Linux x64 (APPIMAGE) | [rtsp-inspector-1.0.3-linux-x64.AppImage](https://github.com/hannes-wan/rtsp-inspector-official/releases/download/v1.0.3/rtsp-inspector-1.0.3-linux-x64.AppImage) | Portable Linux desktop package |
+| Linux x64 (DEB) | [rtsp-inspector-1.0.3-linux-x64.deb](https://github.com/hannes-wan/rtsp-inspector-official/releases/download/v1.0.3/rtsp-inspector-1.0.3-linux-x64.deb) | Debian, Ubuntu, Mint, and compatible systems |
+| Linux x64 (RPM) | [rtsp-inspector-1.0.3-linux-x64.rpm](https://github.com/hannes-wan/rtsp-inspector-official/releases/download/v1.0.3/rtsp-inspector-1.0.3-linux-x64.rpm) | Fedora, RHEL, openSUSE, and compatible systems |
+| Windows x64 | [rtsp-inspector-1.0.3-windows-x64-setup.exe](https://github.com/hannes-wan/rtsp-inspector-official/releases/download/v1.0.3/rtsp-inspector-1.0.3-windows-x64-setup.exe) | Guided Windows installer |
+
+Checksums, installation notes, and the complete platform matrix live on the [official download page](https://hannes-software.com/rtsp-inspector/download/).
+
+## Why RTSP Inspector exists
 
 Built for CCTV installers, security integrators, IP camera vendors, NVR/VMS support teams, and field engineers who need a repeatable answer they can send to a customer, vendor, or internal QA team.
 
-## Why you should try it
+> **Edition boundary:** The technical sections below describe the complete product surface and can include optional licensed workflows. The exact free Community Edition scope is listed separately below.
 
-- You need to prove whether RTSP control, SDP, RTP delivery, RTCP timing, codec readiness, network ownership, or the camera itself is the failure boundary.
-- You want a report a customer, vendor, installer, or support team can read instead of a pile of screenshots.
-- You have seen “VLC plays it” and “the VMS cannot” turn into an argument. This turns it into evidence.
+### Find the exact camera-stream failure boundary before the blame loop starts.
 
-## What makes it strong
+RTSP Inspector is the focused local desktop workbench for teams that need to explain CCTV and IP camera failures across RTSP/RTP/RTCP/SDP, H.264/H.265 structure, transport choice, and reportable evidence.
+
+### RTSP request and response timeline
+
+Inspect OPTIONS, DESCRIBE, SETUP, PLAY, status codes, headers, CSeq behavior, and redacted authentication evidence.
+
+### SDP and control URL resolution
+
+See tracks, codecs, payload types, clock rates, control paths, and missing or inconsistent media declarations.
+
+### RTP and RTCP signal analysis
+
+Surface loss, duplicate packets, reordering, jitter, SSRC changes, malformed packets, and sender-report timing.
 
 ### Control plane answers first
 
@@ -38,74 +62,125 @@ Built for CCTV installers, security integrators, IP camera vendors, NVR/VMS supp
 - Professional reports export as PDF, HTML, Markdown, and saved JSON so the answer can leave the app without rewriting notes by hand.
 - The app stays local on the desktop and focused on evidence handoff, not NVR playback, generic packet browsing, or cloud upload flows.
 
-### A cheap field report beats another hour on site
+### A focused field report beats another hour on site
 
 - Community is enough to preview a single RTSP-over-TCP case; Professional unlocks UDP unicast receive, advanced H264/H265 checks, reports, and saved sessions.
 - No subscription, no account dashboard to keep alive, and no improvised VLC/Wireshark/ONVIF toolchain just to explain one broken camera stream.
-- Buy it when a repeatable diagnostic report is worth more than another hour of arguing between RTSP control, RTP delivery, RTCP timing, SDP metadata, codec readiness, and network ownership.
+- Use it when a repeatable diagnostic report is worth more than another hour of arguing between RTSP control, RTP delivery, RTCP timing, SDP metadata, codec readiness, and network ownership.
 
-## What you can do with it
+## Community Edition is genuinely useful
 
-- **RTSP request and response timeline** — Inspect OPTIONS, DESCRIBE, SETUP, PLAY, status codes, headers, CSeq behavior, and redacted authentication evidence.
-- **SDP and control URL resolution** — See tracks, codecs, payload types, clock rates, control paths, and missing or inconsistent media declarations.
-- **RTP and RTCP signal analysis** — Surface loss, duplicate packets, reordering, jitter, SSRC changes, malformed packets, and sender-report timing.
+- Live RTSP-over-TCP inspection
+- RTSP/RTP/RTCP/H264 evidence tables
+- Diagnostics cockpit
+- JSON report preview
 
-## Screenshots
+Optional licensed workflows are available for people who need the expanded feature set. Licensing details belong on the website; the Community Edition remains the free way to evaluate and use the core product.
+
+## See the real desktop workflow
 
 ### RTSP diagnostic workbench
 
-![RTSP diagnostic workbench](https://hannes-software.com/assets/rtsp-inspector/screenshots/workbench-overview-9edca2f64d.webp)
+![RTSP diagnostic workbench — RTSP Inspector](https://hannes-software.com/assets/rtsp-inspector/screenshots/workbench-overview-e805532299.webp)
 
 A full dark-theme cockpit for camera URL, RTSP control, RTP/RTCP, codec readiness, timeline, and report handoff.
 
 ### RTSP message transcript
 
-![RTSP message transcript](https://hannes-software.com/assets/rtsp-inspector/screenshots/messages-transcript-c3fc86cf25.webp)
+![RTSP message transcript — RTSP Inspector](https://hannes-software.com/assets/rtsp-inspector/screenshots/messages-transcript-4b32ddf826.webp)
 
 Control-plane requests, responses, status codes, headers, and timing evidence.
 
 ### RTP stream evidence
 
-![RTP stream evidence](https://hannes-software.com/assets/rtsp-inspector/screenshots/streams-rtp-90649c2df8.webp)
+![RTP stream evidence — RTSP Inspector](https://hannes-software.com/assets/rtsp-inspector/screenshots/streams-rtp-86376cf3a0.webp)
 
 Sequence, timestamp, RTCP, SDP, and media continuity in one view.
 
-## Download packages
+### Codec readiness
 
-Latest GitHub release: **v1.0.3**
+![Codec readiness — RTSP Inspector](https://hannes-software.com/assets/rtsp-inspector/screenshots/codec-readiness-60a20bab66.webp)
 
-- [rtsp-inspector-1.0.3-windows-x64-setup.exe](https://github.com/hannes-wan/rtsp-inspector-official/releases/download/v1.0.3/rtsp-inspector-1.0.3-windows-x64-setup.exe)
-- [rtsp-inspector-1.0.3-linux-x64.AppImage](https://github.com/hannes-wan/rtsp-inspector-official/releases/download/v1.0.3/rtsp-inspector-1.0.3-linux-x64.AppImage)
-- [rtsp-inspector-1.0.3-linux-x64.deb](https://github.com/hannes-wan/rtsp-inspector-official/releases/download/v1.0.3/rtsp-inspector-1.0.3-linux-x64.deb)
-- [rtsp-inspector-1.0.3-linux-x64.rpm](https://github.com/hannes-wan/rtsp-inspector-official/releases/download/v1.0.3/rtsp-inspector-1.0.3-linux-x64.rpm)
+H264/H265 parameter sets, codec warnings, and payload readiness checks.
 
-Prefer the product page if you want the full download notes, licensing details, and help articles:
+### Evidence timeline
 
-- https://hannes-software.com/rtsp-inspector/download/
+![Evidence timeline — RTSP Inspector](https://hannes-software.com/assets/rtsp-inspector/screenshots/evidence-timeline-592f7a93dc.webp)
 
-## Editions
+Chronological RTSP, RTP, RTCP, codec, and diagnostic events for handoff.
 
-- **Community** — Free: Single-stream live RTSP-over-TCP diagnosis and JSON report preview. Key features: Live RTSP-over-TCP inspection, RTSP/RTP/RTCP/H264 evidence tables, Diagnostics cockpit, JSON report preview.
-- **Professional** — $19 lifetime: One-time lifetime license that unlocks every paid desktop capability. Key features: PDF, HTML, Markdown, and saved JSON diagnostic reports, .risession save/open, RTP/RTCP over UDP unicast live receive, Advanced H264/H265 structural inspection, Case Library.
-- **Team** — $49 team / 3 seats: Three-seat team bundle for one product. Key features: Three machine-bound seats, All Professional features, One billing email, Website checkout activation.
+### Report preview
 
-## Good fit / not a good fit
+![Report preview — RTSP Inspector](https://hannes-software.com/assets/rtsp-inspector/screenshots/report-preview-f75e319efc.webp)
 
-Good fit: Turn camera black screens, VLC-vs-VMS mismatches, ONVIF handoff failures, blocked UDP media, RTP loss, and H.264/H.265 codec problems into a report a customer, vendor, or support team can act on.
+Compact support reports built from protocol evidence.
 
-Boundary: Not a player, VMS, NVR, ONVIF manager replacement, or surveillance suite. It is a diagnostic workbench for stream evidence.
+## Local-first by design
 
-## Search terms this product is built around
+RTSP Inspector is a desktop workflow. Your working files stay on the machine unless you deliberately export or share them. The product page documents the exact capability boundary so the focused workflow can be evaluated on real evidence.
 
-RTSP diagnostic tool, RTSP stream troubleshooting, IP camera troubleshooting, RTP packet loss, H.264/H.265 stream failure, ONVIF RTSP handoff, ip camera software, ip camera app, rtp vs rtsp, streaming protocols
+## Documentation
 
-## About Hannes Software
+- [Case Replay and Comparison](https://hannes-software.com/rtsp-inspector/help/case-replay/)
+- [Connect to an RTSP Stream](https://hannes-software.com/rtsp-inspector/help/connect/)
+- [RTSP Inspector License](https://hannes-software.com/rtsp-inspector/help/license/)
+- [Export RTSP Diagnostic Reports](https://hannes-software.com/rtsp-inspector/help/reports/)
+- [Troubleshooting RTSP Streams](https://hannes-software.com/rtsp-inspector/help/troubleshooting/)
 
-Hannes Software builds focused local-first desktop tools: protocol diagnostics, music practice/transcription utilities, and small-clinic operations software. The pattern is simple: solve a narrow workflow well, keep data on the user’s machine, and sell with one-time pricing instead of a subscription treadmill.
+## Frequently asked questions
 
-Website: https://hannes-software.com/
-Contact: support@hannes-software.com
+> **Community scope:** Community Edition includes one RTSP-over-TCP session, RTSP/RTP/RTCP/H.264 evidence, the diagnostics cockpit, and JSON preview; advanced codec, UDP, saved-case, and report workflows are optional licensed capabilities.
 
-## Repository note
+<details>
+<summary><strong>Is RTSP Inspector a video player?</strong></summary>
 
-This is the official public repository for RTSP Inspector downloads, screenshots, release links, and product information. The commercial desktop application source code is not published in this repository.
+No. It is a diagnostic and reporting workbench for RTSP/RTP/RTCP/H.264/H.265 evidence. It does not replace VLC, an NVR, or an ONVIF manager.
+
+</details>
+
+<details>
+<summary><strong>What's the difference between RTSP Inspector and Wireshark for RTSP debugging?</strong></summary>
+
+Wireshark shows you every packet. RTSP Inspector shows you why the stream failed — it decodes SDP track declarations, tracks RTP continuity gaps, surfaces RTCP timing issues, inspects H.264/H.265 structure, and exports diagnostic reports as PDF evidence. See the full comparison on our blog.
+
+</details>
+
+<details>
+<summary><strong>Who uses RTSP Inspector?</strong></summary>
+
+CCTV integrators, IP camera vendors, video platform engineers, and NVR support teams who need a repeatable, reportable answer to why a camera stream connects, glitches, freezes, or never reaches usable video.
+
+</details>
+
+<details>
+<summary><strong>Why use RTSP Inspector if VLC can play the stream?</strong></summary>
+
+VLC proves that one player can show video. RTSP Inspector proves why the stream succeeds or fails by exposing RTSP status, SDP tracks, transport negotiation, RTP continuity, RTCP timing, and H.264/H.265 structure. Use it when the stream must be debugged or reported, not merely watched.
+
+</details>
+
+<details>
+<summary><strong>What is the difference between ONVIF Device Manager and RTSP Inspector?</strong></summary>
+
+ONVIF Device Manager is useful for discovery, profiles, and finding stream URIs. RTSP Inspector starts after you have a URI and need to diagnose DESCRIBE, SETUP, PLAY, SDP, RTP, RTCP, transport, and codec evidence.
+
+</details>
+
+<details>
+<summary><strong>How do I decide between UDP and TCP interleaved RTSP diagnostics?</strong></summary>
+
+Test the production path first, then compare. UDP can reveal firewall, NAT, loss, and port-mapping issues. TCP interleaved is easier through restricted networks but can hide packet delivery symptoms. RTSP Inspector shows the transport reply and media evidence for both paths.
+
+</details>
+
+## Community, support, and security
+
+- Bugs: [open a structured bug report](https://github.com/hannes-wan/rtsp-inspector-official/issues/new?template=bug_report.yml)
+- Ideas: [request a focused workflow improvement](https://github.com/hannes-wan/rtsp-inspector-official/issues/new?template=feature_request.yml)
+- Product help: [documentation and troubleshooting](https://hannes-software.com/rtsp-inspector/help/)
+- Private support: [support@hannes-software.com](mailto:support@hannes-software.com)
+- Security reports: follow [SECURITY.md](SECURITY.md); do not post sensitive files, credentials, patient data, or private captures in public issues.
+
+## Official repository
+
+This is the official public distribution and community repository for RTSP Inspector: verified release links, current screenshots, documentation routes, issue intake, and security guidance. Product development happens in a private workspace; public issues here are the right place to report reproducible product behavior and request focused improvements.
