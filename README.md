@@ -5,7 +5,7 @@
 
 > Diagnose an RTSP camera stream by connecting control-plane, RTP, RTCP, timing, and codec evidence in one local case.
 
-Free Community Edition RTSP diagnostic tool for RTSP/RTP/RTCP/H.264 evidence, IP-camera troubleshooting and JSON preview.
+Free Community Edition RTSP stream tester and diagnostic tool for RTSP/RTP/RTCP/H.264 evidence, IP-camera troubleshooting, and JSON preview.
 
 Turn camera black screens, VLC-vs-VMS mismatches, ONVIF handoff failures, blocked UDP media, RTP loss, and H.264/H.265 codec problems into a report a customer, vendor, or support team can act on.
 
