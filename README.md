@@ -3,7 +3,9 @@
 [![Community Edition: Free](https://img.shields.io/badge/Community_Edition-Free-16a34a?style=for-the-badge)](https://hannes-software.com/rtsp-inspector/download/)
 [![Windows](https://img.shields.io/badge/Windows-Desktop-2563eb?style=flat-square&logo=windows)](https://hannes-software.com/rtsp-inspector/download/) [![Linux](https://img.shields.io/badge/Linux-Desktop-f59e0b?style=flat-square&logo=linux)](https://hannes-software.com/rtsp-inspector/download/) [![Local first](https://img.shields.io/badge/Workflow-Local--first-7c3aed?style=flat-square)](https://hannes-software.com/rtsp-inspector/)
 
-> RTSP software for proving why an IP camera stream fails.
+> Diagnose an RTSP camera stream by connecting control-plane, RTP, RTCP, timing, and codec evidence in one local case.
+
+Free Community Edition RTSP diagnostic tool for RTSP/RTP/RTCP/H.264 evidence, IP-camera troubleshooting and JSON preview.
 
 Turn camera black screens, VLC-vs-VMS mismatches, ONVIF handoff failures, blocked UDP media, RTP loss, and H.264/H.265 codec problems into a report a customer, vendor, or support team can act on.
 
@@ -146,6 +148,13 @@ Wireshark shows you every packet. RTSP Inspector shows you why the stream failed
 </details>
 
 <details>
+<summary><strong>Does it support RTP over UDP for live camera streams?</strong></summary>
+
+Community supports RTSP-over-TCP interleaved RTP. The Community edition is free. Optional paid editions add advanced workflows; see the product page for current access details.
+
+</details>
+
+<details>
 <summary><strong>Who uses RTSP Inspector?</strong></summary>
 
 CCTV integrators, IP camera vendors, video platform engineers, and NVR support teams who need a repeatable, reportable answer to why a camera stream connects, glitches, freezes, or never reaches usable video.
@@ -163,13 +172,6 @@ VLC proves that one player can show video. RTSP Inspector proves why the stream 
 <summary><strong>What is the difference between ONVIF Device Manager and RTSP Inspector?</strong></summary>
 
 ONVIF Device Manager is useful for discovery, profiles, and finding stream URIs. RTSP Inspector starts after you have a URI and need to diagnose DESCRIBE, SETUP, PLAY, SDP, RTP, RTCP, transport, and codec evidence.
-
-</details>
-
-<details>
-<summary><strong>How do I decide between UDP and TCP interleaved RTSP diagnostics?</strong></summary>
-
-Test the production path first, then compare. UDP can reveal firewall, NAT, loss, and port-mapping issues. TCP interleaved is easier through restricted networks but can hide packet delivery symptoms. RTSP Inspector shows the transport reply and media evidence for both paths.
 
 </details>
 
