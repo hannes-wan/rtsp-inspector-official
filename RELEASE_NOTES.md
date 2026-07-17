@@ -1,22 +1,20 @@
-# RTSP Inspector 1.0.3
+# RTSP Inspector 1.0.4
 
 **RTSP Inspector Community Edition is free to download and use.** This release keeps the core desktop workflow available without a subscription requirement.
 
 ## What stands out in this release
 
-- OPTIONS, DESCRIBE, SETUP, and PLAY timelines retain status, headers, CSeq, and redacted authentication evidence.
-- SDP analysis maps tracks, payload types, clock rates, control URLs, and missing or contradictory media declarations.
-- RTP continuity exposes loss, duplicates, reordering, jitter, SSRC changes, and malformed packets; RTCP sender reports add timing, packet, and CNAME context.
-- Community Edition includes a single RTSP-over-TCP session, RTSP/RTP/RTCP/H.264 evidence tables, the diagnostics cockpit, and JSON report preview.
-- Advanced H.264/H.265 structure, UDP unicast receive, .risession case storage, and saved PDF, HTML, Markdown, or JSON reports remain clearly identified as optional licensed workflows.
-- The local case workflow connects control-plane behavior, media flow, codec readiness, and reproducible handoff in a surface purpose-built for protocol evidence rather than playback or camera management.
+- Diagnosis now distinguishes no evidence, active collection, incomplete evidence, and sufficient evidence; empty sessions no longer receive a healthy verdict, health score, or synthetic confidence.
+- Reports and the desktop workbench now consume the same backend-authored diagnosis, preserving root cause, next action, evidence references, and unavailable states across HTML, Markdown, PDF, and UI surfaces.
+- Stream views separate cumulative RTSP, RTP, RTCP, and codec totals from the bounded retained evidence window and preserve capture, network provenance, and duration.
+- Reworked the protocol workbench for readable issue queues, evidence drill-down, timelines, stream tables, comparisons, and resizable native layouts; replays now accurately reflect real analyzer output.
 
 ## Choose the right package
 
-- **Linux x64 (APPIMAGE):** `rtsp-inspector-1.0.3-linux-x64.AppImage` — Portable Linux desktop package
-- **Linux x64 (DEB):** `rtsp-inspector-1.0.3-linux-x64.deb` — Debian, Ubuntu, Mint, and compatible systems
-- **Linux x64 (RPM):** `rtsp-inspector-1.0.3-linux-x64.rpm` — Fedora, RHEL, openSUSE, and compatible systems
-- **Windows x64:** `rtsp-inspector-1.0.3-windows-x64-setup.exe` — Guided Windows installer
+- **Linux x64 (APPIMAGE):** `rtsp-inspector-1.0.4-linux-x64.AppImage` — Portable Linux desktop package
+- **Linux x64 (DEB):** `rtsp-inspector-1.0.4-linux-x64.deb` — Debian, Ubuntu, Mint, and compatible systems
+- **Linux x64 (RPM):** `rtsp-inspector-1.0.4-linux-x64.rpm` — Fedora, RHEL, openSUSE, and compatible systems
+- **Windows x64:** `rtsp-inspector-1.0.4-windows-x64-setup.exe` — Guided Windows installer
 
 ## Before you install
 

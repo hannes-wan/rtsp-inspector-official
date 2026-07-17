@@ -13,16 +13,22 @@ Turn camera black screens, VLC-vs-VMS mismatches, ONVIF handoff failures, blocke
 
 [Download Community Edition](https://hannes-software.com/rtsp-inspector/download/) · [Product guide](https://hannes-software.com/rtsp-inspector/) · [Help](https://hannes-software.com/rtsp-inspector/help/) · [Report a bug](https://github.com/hannes-wan/rtsp-inspector-official/issues/new?template=bug_report.yml)
 
-## Download RTSP Inspector 1.0.3
+## Download RTSP Inspector 1.0.4
 
 | Platform | Package | Use it when |
 | --- | --- | --- |
-| Linux x64 (APPIMAGE) | [rtsp-inspector-1.0.3-linux-x64.AppImage](https://github.com/hannes-wan/rtsp-inspector-official/releases/download/v1.0.3/rtsp-inspector-1.0.3-linux-x64.AppImage) | Portable Linux desktop package |
-| Linux x64 (DEB) | [rtsp-inspector-1.0.3-linux-x64.deb](https://github.com/hannes-wan/rtsp-inspector-official/releases/download/v1.0.3/rtsp-inspector-1.0.3-linux-x64.deb) | Debian, Ubuntu, Mint, and compatible systems |
-| Linux x64 (RPM) | [rtsp-inspector-1.0.3-linux-x64.rpm](https://github.com/hannes-wan/rtsp-inspector-official/releases/download/v1.0.3/rtsp-inspector-1.0.3-linux-x64.rpm) | Fedora, RHEL, openSUSE, and compatible systems |
-| Windows x64 | [rtsp-inspector-1.0.3-windows-x64-setup.exe](https://github.com/hannes-wan/rtsp-inspector-official/releases/download/v1.0.3/rtsp-inspector-1.0.3-windows-x64-setup.exe) | Guided Windows installer |
+| Linux x64 (APPIMAGE) | [rtsp-inspector-1.0.4-linux-x64.AppImage](https://github.com/hannes-wan/rtsp-inspector-official/releases/download/v1.0.4/rtsp-inspector-1.0.4-linux-x64.AppImage) | Portable Linux desktop package |
+| Linux x64 (DEB) | [rtsp-inspector-1.0.4-linux-x64.deb](https://github.com/hannes-wan/rtsp-inspector-official/releases/download/v1.0.4/rtsp-inspector-1.0.4-linux-x64.deb) | Debian, Ubuntu, Mint, and compatible systems |
+| Linux x64 (RPM) | [rtsp-inspector-1.0.4-linux-x64.rpm](https://github.com/hannes-wan/rtsp-inspector-official/releases/download/v1.0.4/rtsp-inspector-1.0.4-linux-x64.rpm) | Fedora, RHEL, openSUSE, and compatible systems |
+| Windows x64 | [rtsp-inspector-1.0.4-windows-x64-setup.exe](https://github.com/hannes-wan/rtsp-inspector-official/releases/download/v1.0.4/rtsp-inspector-1.0.4-windows-x64-setup.exe) | Guided Windows installer |
 
 Checksums, installation notes, and the complete platform matrix live on the [official download page](https://hannes-software.com/rtsp-inspector/download/).
+
+## System requirements
+
+- **Windows:** Windows 10 or Windows 11 on x64.
+- **Linux:** a mainstream x64 distribution with glibc 2.35 or newer, such as Ubuntu 22.04+, Debian 12+, Fedora, or openSUSE (AppImage, DEB, and RPM packages).
+- **Disk space:** a few hundred megabytes free for the application and its bundled resources.
 
 ## Why RTSP Inspector exists
 
@@ -66,7 +72,7 @@ Surface loss, duplicate packets, reordering, jitter, SSRC changes, malformed pac
 
 ### A focused field report beats another hour on site
 
-- Community is enough to preview a single RTSP-over-TCP case; Professional unlocks UDP unicast receive, advanced H264/H265 checks, reports, and saved sessions.
+- Community is enough to preview a single RTSP-over-TCP case; Optional licensing unlocks UDP unicast receive, advanced H264/H265 checks, reports, and saved sessions.
 - No subscription, no account dashboard to keep alive, and no improvised VLC/Wireshark/ONVIF toolchain just to explain one broken camera stream.
 - Use it when a repeatable diagnostic report is worth more than another hour of arguing between RTSP control, RTP delivery, RTCP timing, SDP metadata, codec readiness, and network ownership.
 
@@ -143,14 +149,14 @@ No. It is a diagnostic and reporting workbench for RTSP/RTP/RTCP/H.264/H.265 evi
 <details>
 <summary><strong>What's the difference between RTSP Inspector and Wireshark for RTSP debugging?</strong></summary>
 
-Wireshark shows you every packet. RTSP Inspector shows you why the stream failed — it decodes SDP track declarations, tracks RTP continuity gaps, surfaces RTCP timing issues, inspects H.264/H.265 structure, and exports diagnostic reports as PDF evidence. See the full comparison on our blog.
+Wireshark shows you every packet. RTSP Inspector shows you why the stream failed — it decodes SDP track declarations, tracks RTP continuity gaps, surfaces RTCP timing issues, inspects H.264/H.265 structure, and exports diagnostic reports as PDF evidence. See the [full comparison](https://hannes-software.com/rtsp-inspector/blogs/rtsp-inspector-vs-wireshark-vlc-onvif-device-manager/).
 
 </details>
 
 <details>
 <summary><strong>Does it support RTP over UDP for live camera streams?</strong></summary>
 
-Community supports RTSP-over-TCP interleaved RTP. The Community edition is free. Optional paid editions add advanced workflows; see the product page for current access details.
+Community supports RTSP-over-TCP interleaved RTP. The Community Edition is free. Optional licensed capabilities add advanced workflows; see the product page for current access details.
 
 </details>
 
